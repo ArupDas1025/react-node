@@ -5,8 +5,8 @@ import App from "./App";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Profile from "./pages/Profile";
-import Admin from "./pages/Admin"; // Import Admin page
-import Home from "./pages/Profile";
+import Admin from "./pages/Admin";
+import Home from "./pages/Home"; // ✅ Corrected import
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -16,8 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/admin" element={<Admin />} /> {/* Admin Route */}
-        
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/home" element={<Home />} /> {/* ✅ Added Route for Home */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
